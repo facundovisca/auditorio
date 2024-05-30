@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcano sueño</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center vh-100"
+    >
+      <div class="container">
+        <p id="frase" class="frase">
+          Arcano sueño<br />
+          antepasado de mi sonrisa<br />
+          <span class="resaltar"
+            ><a href="../negocios/index.html">el mundo está demacrado</a></span
+          ><br />
+          <span class="resaltar"
+            ><a href="../bots/index.html">y hay candado pero no llaves</a><br
+          /></span>
+          y hay pavor pero no lágrimas
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function cambiarOpacidadYReproducirAudio() {
+        var frase = document.getElementById("frase");
+        frase.style.opacity = "1"; // Cambiar la opacidad de la frase a 1
+      }
+
+      document.addEventListener(
+        "DOMContentLoaded",
+        cambiarOpacidadYReproducirAudio
+      );
+    </script>
+  </body>
+</html>
