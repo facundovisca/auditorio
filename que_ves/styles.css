@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#sketch-container {
+  background-color: #c0c0c0; /* Silver */
+  border: 8px solid #808080; /* Gray */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #000000; /* Black */
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+}
+
+#controls button, #controls a {
+  background-color: #c0c0c0; /* Silver */
+  border: 2px solid #808080; /* Gray */
+  border-radius: 6px;
+  padding: 6px 12px; /* Ajuste el padding para que los botones sean un poco más pequeños */
+  margin: 0 8px; /* Reduzca el espacio entre los botones */
+  cursor: pointer;
+  font-size: 14px; /* Reduzca un poco el tamaño del texto */
+  color: #000000; /* Color del texto */
+  transition: background-color 0.3s ease; /* Añadir una transición suave */
+}
+
+
+
+#controls button:hover, #controls a:hover {
+  background-color: #898989; /* Cambiar el color de fondo cuando se hace hover */
+}
+
+a {
+  text-decoration: none;
+}

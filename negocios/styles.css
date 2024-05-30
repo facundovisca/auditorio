@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 250px); /* Ajustamos el ancho de las columnas */
+  grid-template-rows: repeat(3, 250px); /* Ajustamos el alto de las filas */
+  width: 700px; /* Ajustamos el ancho del contenedor */
+  height: 700px; /* Ajustamos el alto del contenedor */
+  gap: 0; /* Eliminamos el espacio entre las tarjetas */
+}
+
+.card {
+  width: 250px; /* Ajustamos el ancho de las tarjetas */
+  height: 250px; /* Ajustamos el alto de las tarjetas */
+  background-color: #ccc;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
