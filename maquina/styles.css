@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.rojo {
+  width: 150px;
+  height: 150px;
+  background: url("img/rojo.png") no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.amarillo {
+  width: 150px;
+  height: 150px;
+  background: url("img/amarillo.png") no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.verde {
+  width: 150px;
+  height: 150px;
+  background: url("img/verde.png") no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.frase {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#principal {
+  display: block;
+}
+
+#ocultos {
+  display: none;
+}
+
+button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  text-decoration: none;
+
+}

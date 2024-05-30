@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>no te quedes conmigo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="center">
+      <a
+        href="../index.html"
+        class="texto-grande"
+        onclick="openFullScreen(event)"
+      >
+        Entonces<br>
+        <span class="resaltado">no te quedes conmigo</span>
+      </a>
+    </div>
+    <audio id="audioPlayer" style="display:none;"></audio>
+
+    <script>
+        window.onload = function() {
+            // Obtener el número del archivo de audio desde la URL
+            var audioNumber = 10;
+
+            // Construir la ruta del archivo de audio
+            var audioSrc = 'data/' + audioNumber + '.wav';
+
+            // Configurar el origen del archivo de audio
+            var audio = document.getElementById("audioPlayer");
+            audio.src = audioSrc;
+
+            // Reproducir el audio
+            audio.play();
+        };
+
+        function openFullScreen(event) {
+            event.preventDefault(); // Previene que el enlace se abra de manera normal
+            var url = event.currentTarget.href;
+            var width = window.screen.width;
+            var height = window.screen.height;
+
+            // Abre una nueva ventana en pantalla completa
+            var newWindow = window.open(url, '_blank', `toolbar=0,location=0,menubar=0,width=${width},height=${height}`);
+
+            // Maximiza la ventana
+            if (newWindow) {
+                newWindow.moveTo(0, 0);
+                newWindow.resizeTo(width, height);
+            }
+        }
+    </script>
+  </body>
+</html>

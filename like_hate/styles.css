@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'SocialMedia';
+    src: url('socialmedia.ttf') format('truetype');
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white; /* Color de texto general */
+}
+
+.container {
+    text-align: center;
+}
+
+.buttonContainer {
+    display: inline-block;
+    margin: 10px;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.counter {
+    font-family: 'SocialMedia', sans-serif; /* Usar la fuente personalizada */
+    font-size: 20px;
+    margin-bottom: 2px; /* Reducir la distancia entre el título del contador y el número */
+    font-weight: bold; /* Aplicar negrita */
+}
+
+.counterValue {
+    font-size: 24px;
+    font-weight: bold; /* Aplicar negrita */
+}
+
+.like {
+    color: green;
+}
+
+.hate {
+    color: red;
+}
